@@ -1,6 +1,8 @@
-﻿namespace MultibleDbCRUD.Models
+﻿using MultibleDbCRUD.Models.Abstract;
+
+namespace MultibleDbCRUD.Models
 {
-    public class School
+    public class School : BaseEntity
     {
         public string ID_school { get; set; }
         public string SchoolName { get; set; }
