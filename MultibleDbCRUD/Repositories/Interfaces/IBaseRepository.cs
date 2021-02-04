@@ -9,11 +9,10 @@ namespace MultibleDbCRUD.Repositories.Interfaces
 {
     public interface IBaseRepository<TContext, T> where TContext : DbContext where T : BaseEntity
     {
-        List<T> GetAll();
+        IEnumerable<T> GetAll();
         T Find(string id);
-
         void Add(T value);
-
+        bool Update(T Value);
         void SaveChange();
     }
 }
