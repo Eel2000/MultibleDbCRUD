@@ -1,11 +1,12 @@
-﻿using System;
+﻿using MultibleDbCRUD.Models.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace MultibleDbCRUD.Models
 {
-    public class Student
+    public class Student : BaseEntity
     {
         public string ID { get; set; }
         public string FirstName { get; set; }
